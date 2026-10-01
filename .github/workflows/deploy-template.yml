@@ -22,8 +22,5 @@ jobs:
 
     steps:
       - name: Deploy
-        env:
-          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: |
-          test -n "$DEPLOY_TOKEN"
           echo "Deploying ${{ inputs.image-tag }} to ${{ inputs.environment }}"
