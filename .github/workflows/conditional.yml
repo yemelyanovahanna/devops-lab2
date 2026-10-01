@@ -17,6 +17,7 @@ jobs:
         id: filter
 
         with:
+          base: ${{ github.ref }}
           filters: |
             backend:
               - 'backend/**'
